@@ -34,7 +34,7 @@
 				}
 			},
 			{
-				"name": "ForEach1",
+				"name": "ForEachGitLoop",
 				"type": "ForEach",
 				"dependsOn": [
 					{
