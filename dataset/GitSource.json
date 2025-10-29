@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "saiteja22562/Adventure-Works-Azure-Project/blob/main/sourcedata/AdventureWorks_Calendar.csv"
+				"relativeUrl": "saiteja22562/Adventure-Works-Azure-Project/refs/heads/main/sourcedata/AdventureWorks_Calendar.csv?token=GHSAT0AAAAAADNM6EOHCLPDKT2QEDN2BB3S2ICGQUQ"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
