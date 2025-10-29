@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText",
+	"name": "GitSource",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "HttpServer1",
