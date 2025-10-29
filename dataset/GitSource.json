@@ -1,0 +1,22 @@
+{
+	"name": "GitSource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "/saiteja22562/Adventure-Works-Azure-Project/refs/heads/main/sourcedata/AdventureWorks_Products.csv?token=GHSAT0AAAAAADNM6EOG44XQZYBD2HNBMQLU2ICJDGA"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
