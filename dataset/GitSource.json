@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "/saiteja22562/Adventure-Works-Azure-Project/refs/heads/main/sourcedata/AdventureWorks_Products.csv?token=GHSAT0AAAAAADNM6EOG44XQZYBD2HNBMQLU2ICJDGA"
+				"relativeUrl": "saiteja22562/Adventure-Works-Azure-Project/refs/heads/main/sourcedata/AdventureWorks_Products.csv"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
