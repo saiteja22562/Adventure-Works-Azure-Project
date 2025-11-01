@@ -1,0 +1,17 @@
+{
+	"name": "Create_View",
+	"properties": {
+		"content": {
+			"query": "------------------------\n-- Calendar\n------------------------\nCREATE VIEW gold.calendar\nAS\nSELECT \n    * \nFROM \n    OPENROWSET\n        (\n            BULK 'https://advsalesworks.blob.core.windows.net/silver/AdventureWorks_Calendar/',\n            FORMAT = 'PARQUET'\n        ) as QUERY1\n\n\n------------------------\n-- Customers\n------------------------\nCREATE VIEW gold.customers\nAS\nSELECT \n    * \nFROM \n    OPENROWSET\n        (\n            BULK 'https://advsalesworks.blob.core.windows.net/silver/AdventureWorks_Customers/',\n            FORMAT = 'PARQUET'\n        ) as QUERY1\n\n\n\n------------------------\n-- Products\n------------------------\nCREATE VIEW gold.products\nAS\nSELECT \n    * \nFROM \n    OPENROWSET\n        (\n            BULK 'https://advsalesworks.blob.core.windows.net/silver/AdventureWorks_Products/',\n            FORMAT = 'PARQUET'\n        ) as QUERY1\n\n\n------------------------\n-- Returns\n------------------------\nCREATE VIEW gold.returns\nAS\nSELECT \n    * \nFROM \n    OPENROWSET\n        (\n            BULK 'https://advsalesworks.blob.core.windows.net/silver/AdventureWorks_Returns/',\n            FORMAT = 'PARQUET'\n        ) as QUERY1\n        \n\n\n------------------------\n-- Sales\n------------------------\nCREATE VIEW gold.sales\nAS\nSELECT \n    * \nFROM \n    OPENROWSET\n        (\n            BULK 'https://advsalesworks.blob.core.windows.net/silver/AdventureWorks_Sales/',\n            FORMAT = 'PARQUET'\n        ) as QUERY1\n\n\n------------------------\n--Subcategories\n------------------------\nCREATE VIEW gold.subcategories\nAS\nSELECT \n    * \nFROM \n    OPENROWSET\n        (\n            BULK 'https://advsalesworks.blob.core.windows.net/silver/Product_Subcategories/',\n            FORMAT = 'PARQUET'\n        ) as QUERY1\n\n\n\n------------------------\n-- Territories\n------------------------\nCREATE VIEW gold.territories\nAS\nSELECT \n    * \nFROM \n    OPENROWSET\n        (\n            BULK 'https://advsalesworks.blob.core.windows.net/silver/AdventureWorks_Territories/',\n            FORMAT = 'PARQUET'\n        ) as QUERY1",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "awdatabase",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
