@@ -63,5 +63,3 @@ This project implements a complete medallion architecture using AdventureWorks d
 
 
 ***
-
-Feel free to copy, modify, or expand this overview for your GitHub README!
