@@ -1,0 +1,17 @@
+{
+	"name": "Create_View",
+	"properties": {
+		"content": {
+			"query": "CREATE VIEW gold.calendar\n\tAS SELECT * FROM \n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "awdatabase",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
