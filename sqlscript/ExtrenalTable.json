@@ -1,0 +1,17 @@
+{
+	"name": "ExtrenalTable",
+	"properties": {
+		"content": {
+			"query": "CREATE DATABASE SCOPED CREDENTIAL adv \nWITH\n\tIDENTITY='Managed Identity ]'\n\nCREATE EXTERNAL DATA SOURCE src_silver\nWITH\n(\n\tLOCATION = 'https://advsalesworks.blob.core.windows.net/silver'\n\tCREDENTIAL = adv\n)\n\n\nCREATE EXTERNAL DATA SOURCE src_gold\nWITH\n(\n\tLOCATION = 'https://advsalesworks.blob.core.windows.net/gold'\n\tCREDENTIAL = adv\n)\n\nCREATE EXTERNAL FILE FORMAT format_parquet\nWITH\n(\n\tFORMAT_TYPE = PARQUET\n\tDATA_COMPRESSION = 'org.apache.hadoop.io.compress.snappycodec' \n)\n\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "awdatabase",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
